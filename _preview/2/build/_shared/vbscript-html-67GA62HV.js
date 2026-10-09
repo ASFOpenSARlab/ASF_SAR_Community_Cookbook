@@ -1,0 +1,1 @@
+import{c as t}from"/ASF_SAR_Community_Cookbook/_preview/2/build/_shared/chunk-RAQ24GF6.js";var i=t((a,n)=>{function e(s){return{name:"VBScript in HTML",subLanguage:"xml",contains:[{begin:"<%",end:"%>",subLanguage:"vbscript"}]}}n.exports=e});export default i();
