@@ -12,6 +12,8 @@ project:
       # children:
       #   - file: notebooks/how-to-cite.md
     - title: NISAR
+      children:
+        - file: notebooks/GSLC_Faraday_Rotation_Estimation.ipynb
     - title: Sentinel-1
     - title: Cookbook Set Up
       children:
