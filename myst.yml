@@ -8,14 +8,16 @@ project:
   copyright: '2026'
   toc:
     - file: README.md
-    - title: Preamble
-      children:
-        - file: notebooks/how-to-cite.md
+    - title: General SAR
+      # children:
+      #   - file: notebooks/how-to-cite.md
+    - title: NISAR
+    - title: Sentinel-1
     - title: Cookbook Set Up
       children:
         - file: notebooks/software_environment.ipynb
         - file: notebooks/set_up_Earthdata_Login.md
-    - title: Introduction
+    - title: Contributor's Guide
       children:
         - file: CONTRIBUTING.md
         - file: notebooks/notebook-template.ipynb
