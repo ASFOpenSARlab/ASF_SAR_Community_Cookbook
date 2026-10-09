@@ -4,22 +4,22 @@
 We welcome contributions!
 <br>
 
-Please read our [Code of Conduct](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/CODE_OF_CONDUCT.md) before contributing.
+Please read our [Code of Conduct](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/CODE_OF_CONDUCT.md) before contributing.
 
 This project uses the standard **fork → branch → pull request** workflow.
 
 Update the links below when you create a new cook repository from this template repo. 
 
-## 1. View current [issues](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/issues) and engage in discussions
-See if the bug or feature you plan to work on is already under discussion or. If it's not, start a discussion by raising an [issue](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/issues).
+## 1. View current [issues](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/issues) and engage in discussions
+See if the bug or feature you plan to work on is already under discussion or. If it's not, start a discussion by raising an [issue](https://github.com/ASFOpenSARlab/ASF_CookbooASF_SAR_Community_Cookbookk_Template/issues).
 
 ## 2. Fork the repository
-Click the **Fork** button at the top-right of the [ASF Cookbook Template GitHub page](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template) to create your own copy of the repo.
+Click the **Fork** button at the top-right of the [ASF Cookbook Template GitHub page](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook) to create your own copy of the repo.
 
 ## 3. Clone your fork
 ```bash
-git clone https://github.com/<your-username>/ASF_Cookbook_Template.git
-cd ASF_Cookbook_Template
+git clone https://github.com/<your-username>/ASF_SAR_Community_Cookbook.git
+cd ASF_SAR_Community_Cookbook
 ```
 
 ## 4. Create a feature branch
@@ -30,7 +30,7 @@ git checkout -b feature/my-change
 ## 5. Add the upstream remote
 This lets you pull updates from the main project.
 ```bash
-git remote add upstream https://github.com/ASFOpenSARlab/ASF_Cookbook_Template.git
+git remote add upstream https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook.git
 git remote -v
 ```
 
@@ -54,7 +54,7 @@ This cookbook is built with MyST Markdown-backed [Jupyter Book 2](https://jupyte
 As you develop notebooks and documentation, please verify that your Markdown renders correctly when published as as a website as well as when viewed in Jupyter Lab with `jupyterlab-myst` installed.
 :::
 
-To maintain a consistent format for the Jupyter Book, we have provided a [Notebook template](notebooks/notebook-template.ipynb) that we encourage you to use a starting point.
+To maintain a consistent format for the Jupyter Book, we have provided a [Notebook template](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/blob/main/notebooks/notebook-template.ipynb) that we encourage you to use a starting point.
 
 ## 9. Add any new dependencies to a new or existing Pixi environment
 If you add dependencies, you will need to [add them to an existing or new Pixi environment](https://rse-guidelines.readthedocs.io/en/latest/fundamentals/computing-development-environments/pixi/#:~:text=packages%20go%20here-,3.%20Adding%20Dependencies,-Add%20conda%20packages).
