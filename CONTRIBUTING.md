@@ -4,7 +4,7 @@
 We welcome contributions!
 <br>
 
-Please read our [Code of Conduct](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/CODE_OF_CONDUCT.md) before contributing.
+Please read our [Code of Conduct](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/blob/main/CODE_OF_CONDUCT.md) before contributing.
 
 This project uses the standard **fork → branch → pull request** workflow.
 
