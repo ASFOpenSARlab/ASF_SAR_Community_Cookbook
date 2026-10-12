@@ -8,11 +8,9 @@ project:
   copyright: '2026'
   toc:
     - file: README.md
-    - title: General SAR
-      # children:
-      #   - file: notebooks/how-to-cite.md
-    - title: NISAR
-    - title: Sentinel-1
+    # - title: General SAR
+    # - title: NISAR
+    # - title: Sentinel-1
     - title: Cookbook Set Up
       children:
         - file: notebooks/software_environment.ipynb
