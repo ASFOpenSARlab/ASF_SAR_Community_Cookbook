@@ -54,7 +54,7 @@ This cookbook is built with MyST Markdown-backed [Jupyter Book 2](https://jupyte
 As you develop notebooks and documentation, please verify that your Markdown renders correctly when published as as a website as well as when viewed in Jupyter Lab with `jupyterlab-myst` installed.
 :::
 
-To maintain a consistent format for the Jupyter Book, we have provided a [Notebook template](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/blob/main/notebooks/notebook-template.ipynb) that we encourage you to use a starting point.
+To maintain a consistent format for the Jupyter Book, we have provided a [Notebook template](notebook-template.ipynb) that we encourage you to use a starting point.
 
 ## 9. Add any new dependencies to a new or existing Pixi environment
 If you add dependencies, you will need to [add them to an existing or new Pixi environment](https://rse-guidelines.readthedocs.io/en/latest/fundamentals/computing-development-environments/pixi/#:~:text=packages%20go%20here-,3.%20Adding%20Dependencies,-Add%20conda%20packages).
