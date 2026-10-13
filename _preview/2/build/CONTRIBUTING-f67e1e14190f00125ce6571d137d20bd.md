@@ -14,7 +14,7 @@ Update the links below when you create a new cook repository from this template 
 See if the bug or feature you plan to work on is already under discussion or. If it's not, start a discussion by raising an [issue](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/issues).
 
 ## 2. Fork the repository
-Click the **Fork** button at the top-right of the [ASF Cookbook Template GitHub page](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook) to create your own copy of the repo.
+Click the **Fork** button at the top-right of the [ASF_SAR_Community_Cookbook GitHub page](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook) to create your own copy of the repo.
 
 ## 3. Clone your fork
 ```bash
