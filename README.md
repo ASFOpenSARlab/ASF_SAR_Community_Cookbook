@@ -1,23 +1,24 @@
-# [OpenScienceLab Cookbook Template] Replace with Your Title
+# ASF SAR Community Cookbook
 
 <img src="assets/ASF_logo.svg" alt="thumbnail" width="300"/>
 
 [![nightly-build](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/actions/workflows/nightly-build.yaml)
 
-
-This Cookbook Template was adapted from the Project Pythia [Cookbook Template](https://github.com/projectpythia/cookbook-template/blob/main/README.md). It has been updated to provide templates for ASF Cookbooks using the Pixi package manager.
-
-See the [Project Pythia Cookbook Contributor's Guide](https://projectpythia.org/cookbook-guide/#:~:text=forking%20workflow.-,G.%20Deploying%20your%20Cookbook,%C2%B6,-Pythia%20Cookbooks%20are) for instructions on deploying your Cookbook to GitHub Pages.
-
-This Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
-
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+The SAR Community Cookbook is an open, collaborative resource for the Synthetic Aperture Radar (SAR) community to share knowledge and develop workflows.
 
-## Authors
+This cookbook brings together community-contributed examples of SAR processing techniques, algorithms, and analysis pipelines. It provides a platform for researchers to share their approaches, build upon existing work, and improve methods through community collaboration and feedback.
 
-First Author, Second Author, etc. _Acknowledge primary content authors here! You can include links to their GitHub profiles or other unique pages._
+## Community Contributions and Feedback
+
+The workflows in this cookbook are community-contributed and have not been formally vetted or validated. While contributed code is expected to execute successfully prior to inclusion, no guarantees are made regarding the scientific correctness, accuracy, or suitability of methods or results. Users should critically evaluate workflows before applying them to their own research or applications.
+
+Community participation is central to this project. We encourage users to share feedback, report problems, suggest improvements, and discuss approaches through GitHub Issues and Discussions.
+
+## Code of Conduct
+
+Our [Code of Conduct](https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook/blob/main/CODE_OF_CONDUCT.md) outlines expectations for respectful, inclusive, and constructive participation to foster a welcoming and collaborative community.
 
 ### Contributors
 
@@ -27,15 +28,12 @@ First Author, Second Author, etc. _Acknowledge primary content authors here! You
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+This cookbook begins with a "General SAR" chapter, and is then broken up by mission.
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+1. ### General SAR
+1. ### NISAR
+1. ### Sentinel-1
 
-(Add content for this section, e.g., "The foundational content includes ... ")
-
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
-
-(Add content for this section, e.g., "Example workflows include ... ")
 
 ## Running the Notebooks
 
@@ -46,7 +44,7 @@ If you are working in a Jupyter Hub that allows you to build Pixi environments, 
 1. Clone the repository:
 
    ```bash
-    git clone https://github.com/your_account/your_cookbook.git
+    git clone https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook.git
    ```
 
 1. Run the `notebooks/software_environment.ipynb` notebook.
@@ -55,19 +53,15 @@ If you are working in a Jupyter Hub that allows you to build Pixi environments, 
 
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-(Replace "your_account/your_cookbook" with the GitHub org or user name and title of your cookbook repository)
-
-1. Create a copy of this Cookbook template repository, by clicking the `Use this template button` and selecting the `Create a new repository` option on this [repository's GitHub page](). 
-
 1. Clone the new repository:
 
    ```bash
-    git clone https://github.com/your_account/your_cookbook.git
+    git clone https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook.git
    ```
 
-1. Move into the `your_cookbook` directory
+1. Move into the `ASF_SAR_Community_Cookbook` directory
    ```bash
-   cd your_cookbook
+   cd ASF_SAR_Community_Cookbook
    ```
 1. Launch in Jupyter Lab with the included Pixi environment
     ```bash
