@@ -5,13 +5,13 @@
     <loc>http://localhost:3000</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/gslc-faraday-rotation-estimation</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/software-environment</loc>
   </url>
   <url>
     <loc>http://localhost:3000/set-up-earthdata-login</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/gslc-faraday-rotation-estimation</loc>
   </url>
   <url>
     <loc>http://localhost:3000/contributing</loc>
