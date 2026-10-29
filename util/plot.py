@@ -1,59 +1,92 @@
-#! /usr/bin/python3
+import panel as pn
+import holoviews as hv
+import hvplot.xarray
 
-import hvplot.xarray  # noqa
-from copy import deepcopy
 
-
-def fr_view(plot_data, tiles, alpha):
+def fr_view(omega_web, quality_web):
+    """Create an interactive Faraday rotation and quality map.
+    
+    omega_web: Faraday Rotation Estimate raster in web-mercator projection
+    quality_web: Quality metric raster in web-mercator projection
     """
-    fr_view expects a dictionary for `plot_data` like:
-    {
-        "show_fr": omega_web,
-        "show_quality": quality_web
-        "meta": {
-            "bounds": {
-                "x": (xmin, xmax),
-                "y": (ymin, ymax)
-            }
-        }
+
+    xlim = (float(omega_web.x.min()), float(omega_web.x.max()))
+    ylim = (float(omega_web.y.min()), float(omega_web.y.max()))
+
+    # Esri basemap
+    tiles = hv.element.tiles.EsriImagery().opts(
+        xlim=xlim,
+        ylim=ylim,
+        frame_width=700,
+        frame_height=500,
+        active_tools=["wheel_zoom"],
+    )
+
+    # Raster plotting configurations
+    image_kwargs = [
+        # Faraday Rotation
+        {
+            "x": "x",
+            "y": "y",
+            "cmap": "RdBu_r",
+            "clim": (-6, 6),
+            "colorbar": True,
+            "frame_width": 700,
+            "frame_height": 500,
+        },
+        # Quality metric
+        {
+            "x": "x",
+            "y": "y",
+            "cmap": "viridis",
+            "clim": (0, 1),
+            "colorbar": True,
+            "frame_width": 700,
+            "frame_height": 500,
+        },
+    ]
+
+    titles = ["Faraday Rotation", "Faraday Rotation Quality"]
+
+    opts_kwargs = {
+        "xlim": xlim,
+        "ylim": ylim,
     }
-    """
-    layers = deepcopy(tiles)
 
-    for type, data in plot_data.items():
-        if type == "show_fr":
-            cmap = "RdBu_r"
-            title = "Faraday Rotation"
-            colorbar = False
-        elif type == "show_quality":
-            cmap = "viridis"
-            title = "Faraday Rotation Quality"
-            colorbar = True
-        elif type == "meta":
-            continue
-        else:
-            raise RuntimeError(f"Invalid dict in `fr_view`: {plot_data}")
+    # Raster selection button
+    display_mode = pn.widgets.RadioButtonGroup(
+        name="Display",
+        options={
+            "Faraday Rotation": 0,
+            "Quality": 1,
+        },
+        value=0,
+    )
 
-        plot = data.hvplot.image(
-            x="x",
-            y="y",
-            cmap=cmap,
-            clim=(-5, 5),
-            colorbar=colorbar,
-            frame_width=700,
-            frame_height=500,
-            title=title,
+    # Alpha slider
+    alpha = pn.widgets.FloatSlider(
+        name="Alpha",
+        start=0.0,
+        end=1.0,
+        step=0.05,
+        value=1.0,
+    )
+
+    def plot(selected, alpha):
+        layer = [omega_web, quality_web][selected].hvplot.image(
+            **image_kwargs[selected]
         ).opts(
+            **opts_kwargs,
             alpha=alpha,
-            xlim=(
-                plot_data["meta"]["bounds"]["x"][0],
-                plot_data["meta"]["bounds"]["x"][1],
-            ),
-            ylim=(
-                plot_data["meta"]["bounds"]["y"][0],
-                plot_data["meta"]["bounds"]["y"][1],
-            ),
         )
-        layers = layers * plot
 
-    return layers
+        return (tiles * layer).opts(title=titles[selected])
+
+    view = pn.bind(
+        plot,
+        selected=display_mode,
+        alpha=alpha,
+    )
+
+    return pn.Column(display_mode, alpha, view)
+    
