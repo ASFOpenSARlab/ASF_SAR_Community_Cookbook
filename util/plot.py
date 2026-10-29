@@ -88,5 +88,14 @@ def fr_view(omega_web, quality_web):
         alpha=alpha,
     )
 
-    return pn.Column(display_mode, alpha, view)
+    layout = pn.Column(display_mode, alpha, view)
+    
+    return layout.embed(
+        states={
+            display_mode: [0, 1],
+            alpha: [0.0, 0.25, 0.5, 0.75, 1.0],
+        },
+        max_states=10,
+        json=False,
+    )
     
