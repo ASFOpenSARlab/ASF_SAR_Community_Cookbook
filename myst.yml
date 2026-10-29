@@ -1,13 +1,17 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  title: ASF Cookbook Template
-  github: https://github.com/ASFOpenSARlab/ASF_Cookbook_Template
+  title: ASF SAR Community Cookbook
+  github: https://github.com/ASFOpenSARlab/ASF_SAR_Community_Cookbook
   authors:
-    - name: ASF
+    - name: SAR Community
   copyright: '2026'
   toc:
     - file: README.md
+    - title: Cookbook Set Up
+      children:
+        - file: notebooks/software_environment.ipynb
+        - file: notebooks/set_up_Earthdata_Login.md
     - title: General SAR
       # children:
       #   - file: notebooks/how-to-cite.md
@@ -15,10 +19,6 @@ project:
       children:
         - file: notebooks/GSLC_Faraday_Rotation_Estimation.ipynb
     - title: Sentinel-1
-    - title: Cookbook Set Up
-      children:
-        - file: notebooks/software_environment.ipynb
-        - file: notebooks/set_up_Earthdata_Login.md
     - title: Contributor's Guide
       children:
         - file: CONTRIBUTING.md

@@ -27,5 +27,5 @@ hvplot = "*"
 jb-toc = ">=2.0.1, <3"
 
 [tasks]
-register-kernel = "python -m ipykernel install --user --name ASF_SAR_Community_Cookbook --display-name 'ASF_SAR_Community_Cookbook'"
+register-kernel = "python -m ipykernel install --user --name 'ASF_SAR_Community_Cookbook' --display-name 'ASF_SAR_Community_Cookbook'"
 lab = { cmd = "jupyter lab", depends-on = ["register-kernel"] }
