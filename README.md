@@ -2,7 +2,7 @@
 
 [![nightly-build](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/actions/workflows/nightly-build.yaml)
 
-> [!CAUTION]
+> [!WARNING]
 > ### **Community-Contributed Notebooks Are Not Validated by ASF**
 >
 > The [Alaska Satellite Facility (ASF)](https://asf.alaska.edu) hosts this cookbook as a space for the SAR community to collaborate and share workflows.
