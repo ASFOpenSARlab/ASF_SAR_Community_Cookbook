@@ -1,26 +1,17 @@
 # SAR Community Cookbook
 
-<img src="assets/ASF_logo.svg" alt="thumbnail" width="300"/>
-
 [![nightly-build](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ASFOpenSARlab/ASF_Cookbook_Template/actions/workflows/nightly-build.yaml)
 
-<div class="alert alert-warning" role="alert">
-  <h3 class="alert-heading">Community-Contributed Notebooks Are Not Validated by ASF</h3>
-  <p>
-    The <a href="https://asf.alaska.edu">Alaska Satellite Facility (ASF)</a> hosts this cookbook as a space for the SAR community to collaborate and share workflows.
-  </p>
-  <p>
-    ASF has <strong>not reviewed or validated</strong>
-    notebook contributions and does <strong>not endorse</strong> them. Use them at your own discretion.
-  </p>
-  <p>
-    Each notebook is mirrored from its author's source repository and is synced nightly to pull in updates.
-  </p>
-  <p>
-    <strong>Please open issues and submit pull requests for each notebook in its source repository</strong>,
-    not here.
-  </p>
-</div>
+> [!CAUTION]
+> ### **Community-Contributed Notebooks Are Not Validated by ASF**
+>
+> The [Alaska Satellite Facility (ASF)](https://asf.alaska.edu) hosts this cookbook as a space for the SAR community to collaborate and share workflows.
+>
+> ASF has **not reviewed or validated** notebook contributions and does **not endorse** them. Use them at your own discretion.
+>
+> Each notebook is mirrored from its author's source repository and is synced nightly to pull in updates.
+>
+> **Please open issues and submit pull requests for each notebook in its source repository**, not here.
 
 
 ## Motivation
